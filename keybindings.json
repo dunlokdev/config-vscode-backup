@@ -1,0 +1,74 @@
+[
+  /**
+   * Updated by anhdevga's author on Septemper 17 2023
+   * Contact: myloc442@gmail.com
+   * "A bit of fragrance clings to the hand that gives flowers!"
+   */
+  {
+    "key": "ctrl+n",
+    "command": "selectNextSuggestion",
+    "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-extension.vim_ctrl+t",
+    "when": "editorTextFocus && vim.active && vim.use<C-t> && !inDebugRepl"
+  },
+  {
+    "key": "ctrl+t",
+    "command": "-workbench.action.showAllSymbols"
+  },
+  {
+    "key": "ctrl+/",
+    "command": "-bettercomment.toggle",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+shift+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.action.decreaseViewSize"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.increaseViewSize"
+  },
+  {
+    "key": "backspace",
+    "command": "-markdown.extension.onBackspaceKey",
+    "when": "editorTextFocus && !editorHasMultipleSelections && !editorReadonly && !markdown.extension.editor.cursor.inFencedCodeBlock && !markdown.extension.editor.cursor.inMathEnv && !suggestWidgetVisible && vim.mode != 'CommandlineInProgress' && vim.mode != 'EasyMotionInputMode' && vim.mode != 'EasyMotionMode' && vim.mode != 'Normal' && vim.mode != 'Replace' && vim.mode != 'SearchInProgressMode' && vim.mode != 'SurroundInputMode' && vim.mode != 'Visual' && vim.mode != 'VisualBlock' && vim.mode != 'VisualLine' && editorLangId =~ /^markdown$|^rmd$|^quarto$/"
+  },
+
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.togglePanel"
+  },
+  // FILE TREE
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "workbench.action.newWindow",
+    "when": "!explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+d",
+    "command": "deleteFile",
+    "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+  },
+  {
+    "key": "shift+;",
+    "command": "vim.showQuickpickCmdLine",
+    "when": "editorTextFocus && vim.mode != 'Insert'"
+  }
+]
