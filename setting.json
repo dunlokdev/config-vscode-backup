@@ -1,0 +1,383 @@
+{
+  /**
+   * Updated by anhdevga's author on Septemper 17 2023
+   * Contact: myloc442@gmail.com
+   * "A bit of fragrance clings to the hand that gives flowers!"
+   */
+  // Setting sync
+  "settingsSync.ignoredSettings": [],
+
+  "editor.tabCompletion": "on",
+  "editor.fontFamily": "Fira Code Retina",
+  // "editor.fontFamily": "IntelOne Mono",
+  // "editor.fontFamily": "'SF Mono','Droid Sans Mono', 'monospace', monospace",
+  // "editor.fontFamily": "JetBrains Mono",
+
+  // Suggestions
+  "editor.wordBasedSuggestions": false,
+  "editor.rulers": [100],
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  // "diffEditor.renderSideBySide": false,
+  "editor.fontSize": 13.5,
+  "editor.tabSize": 2,
+  "editor.lineHeight": 1.7,
+  "editor.fontLigatures": true,
+  "editor.detectIndentation": false,
+  "editor.minimap.enabled": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  // "editor.suggestSelection": "first",
+  // "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  // "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "workbench.list.smoothScrolling": true,
+  "editor.accessibilitySupport": "off",
+  "editor.linkedEditing": true,
+  "editor.autoClosingQuotes": "beforeWhitespace",
+  "editor.inlineSuggest.enabled": true,
+  "editor.lineNumbers": "relative",
+  "editor.scrollbar.horizontalScrollbarSize": 1,
+  "editor.scrollbar.verticalScrollbarSize": 1,
+  "editor.stickyScroll.enabled": true,
+  "editor.cursorBlinking": "solid",
+
+  // turn off formatting for JS and JSX, we will do this via eslint
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": ["**/*.astro"],
+
+  // File settings
+  "files.trimTrailingWhitespace": true,
+
+  // Workbench
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 7,
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.showTabs": false,
+
+  "security.workspace.trust.untrustedFiles": "open",
+  // IntelliSense Settings
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Git settings
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  // Launch settings
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  // Markdown settings
+  "markdown.preview.fontSize": 13,
+  "markdown.preview.fontFamily": "Arial",
+  "markdown.preview.typographer": true,
+
+  // EXTENSION SETTINGS
+  // ESLint settings
+  "eslint.alwaysShowStatus": true,
+  // Live server settings
+  "liveServer.settings.donotShowInfoMsg": true,
+  // Fig settings
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "2"
+  },
+  // Error lens settings
+  "errorLens.enabled": true,
+  // Emmet settings
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // to do-tree extension settings
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]",
+    "MAYBE"
+  ],
+  "todo-tree.highlights.highlightDelay": 301,
+  "todo-tree.highlights.useColourScheme": true,
+  "turboConsoleLog.includeFileNameAndLineNum": false,
+  "search.searchOnType": false,
+  "redhat.telemetry.enabled": false,
+  "liveServer.settings.donotVerifyTags": true,
+  "terminal.external.osxExec": "Warp.app",
+  "tailwindCSS.experimental.configFile": null,
+  "debug.disassemblyView.showSourceCode": false,
+  "emmet.preferences": {},
+
+  // fix problem where css files were being interpreted as postcss
+  "files.associations": {
+    "*.css": "css",
+    "*.json": "jsonc"
+  },
+  // remove react import for components when using React extension
+  "reactSnippets.settings.importReactOnTop": false,
+  // VIM Config
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.highlightedyank.enable": true,
+  "vim.useCtrlKeys": true,
+  "vim.foldfix": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+    // splits
+    {
+      "before": ["<leader>", "s", "h"],
+      "commands": ["workbench.action.splitEditorLeft"]
+    },
+    {
+      "before": ["<leader>", "s", "l"],
+      "commands": ["workbench.action.splitEditorRight"]
+    },
+    {
+      "before": ["<leader>", "s", "k"],
+      "commands": ["workbench.action.splitEditorUp"]
+    },
+    {
+      "before": ["<leader>", "s", "j"],
+      "commands": ["workbench.action.splitEditorDown"]
+    },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "o", "f"],
+      "commands": ["workbench.action.gotoSymbol"]
+    },
+    {
+      "before": ["<leader>", "o", "g"],
+      "commands": ["workbench.action.showAllSymbols"]
+    },
+    {
+      "before": ["<leader>", "o", "o"],
+      "commands": ["workbench.action.showEditorsInActiveGroup"]
+    },
+    {
+      "before": ["<leader>", "f"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["d"],
+      "after": ["\"", "_", "d"]
+    },
+    {
+      "before": ["D"],
+      "after": ["\"", "_", "D"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
+    },
+    {
+      "before": ["<leader>", "m"],
+      "commands": ["workbench.action.toggleEditorWidths"]
+    },
+    {
+      "before": ["<leader>", "z"],
+      "commands": ["workbench.action.toggleZenMode"]
+    },
+    // panes
+    {
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["<leader>", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["<leader>", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // FILE TREE
+    {
+      "before": ["leader", "n", "e"],
+      "commands": ["workbench.explorer.fileView.focus"]
+    },
+    // NICE TO HAVE
+    {
+      "before": ["leader", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["leader", "p"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["leader", "leader"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    // others
+    {
+      "before": ["J"],
+      "after": ["z", "z", "<C-f>", "z", "z"]
+    },
+    {
+      "before": ["K"],
+      "after": ["z", "z", "<C-b>", "z", "z"]
+    },
+    {
+      "before": ["z", "j"],
+      "after": ["o", "<Esc>"]
+    },
+    {
+      "before": ["z", "k"],
+      "after": ["O", "<Esc>"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "after": ["@", "@"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] }
+  ],
+  "vim.handleKeys": {
+    "<C-x>": false,
+    "<C-z>": false,
+    "<C-y>": false,
+    "<C-v>": false,
+    "<C-c>": false,
+    "<C-g>": false,
+    "<C-d>": false,
+    "<C-b>": false,
+    "<C-f>": false,
+    "backspace": false
+  },
+  // PHP Config
+  "php.validate.enable": true,
+  // Set default html tag inline_break: 2
+  "emmet.syntaxProfiles": {
+    "html": {
+      "inline_break": 2
+    }
+  },
+  "window.menuBarVisibility": "compact",
+  "breadcrumbs.enabled": false,
+  "explorer.compactFolders": false,
+  // Terminal
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontSize": 13,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "editor.guides.bracketPairsHorizontal": true,
+  //   "php.validate.executablePath": "C:\\xampp\\php\\php.exe",
+  "git.ignoreRebaseWarning": true,
+  "javascript.inlayHints.parameterNames.enabled": "all",
+
+  // Config markdown
+  "markdown-pdf.displayHeaderFooter": true,
+  "markdown-pdf.headerTemplate": "<div style=\"font-size: 10px; margin-left: 1cm;\">Dương Mỹ Lộc 🎉 </div> <div style=\"font-size:9px; margin-left: auto; margin-right: 1cm; \"> <span class='date'></span></div>",
+  "markdown-pdf.footerTemplate": "<div style=\"font-size: 10px; margin: 0 auto;\"> <span class='pageNumber'></span> / <span class='totalPages'></span></div>",
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "code-runner.clearPreviousOutput": true,
+  "debug.terminal.clearBeforeReusing": true,
+  "zenMode.hideLineNumbers": false,
+  //   "cSpell.language": "en,vi",
+  // "files.exclude": {
+  //   "**/.git": true,
+  //   "**/.svn": true,
+  //   "**/.hg": true,
+  //   "**/CVS": true,
+  //   "**/.DS_Store": true,
+  //   "**/tmp": true,
+  //   "**/bower_components": true,
+  //   "**/dist": true,
+  //   "**/node_modules": true,
+  //   "**/src/.umi": true,
+  //   "**/src/.umi-production": true
+  // },
+  // "files.watcherExclude": {
+  //   "*/.git/objects/*": true,
+  //   "*/.git/subtree-cache/*": true,
+  //   "*/node_modules/*": true,
+  //   "*/tmp/*": true,
+  //   "*/bower_components/*": true,
+  //   "*/dist/*": true
+  // },
+  "[csharp]": {
+    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Cobalt2"
+}
